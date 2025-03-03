@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+{% block icerik %}
+<div class="row justify-content-center">
+    <div class="col-md-8">
+        <div class="card">
+            <div class="card-body">
+                <h2 class="card-title text-center mb-4">
+                    <i class="fas fa-plus-circle me-2"></i>Yeni Not Ekle
+                </h2>
+                <form method="POST">
+                    <div class="mb-4">
+                        <label for="baslik" class="form-label">Başlık</label>
+                        <input type="text" class="form-control" id="baslik" name="baslik" required
+                               placeholder="Not başlığını girin">
+                    </div>
+                    <div class="mb-4">
+                        <label for="icerik" class="form-label">İçerik</label>
+                        <textarea class="form-control" id="icerik" name="icerik" rows="6" required
+                                  placeholder="Not içeriğini girin"></textarea>
+                    </div>
+                    <div class="d-grid gap-2">
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-save me-2"></i>Kaydet
+                        </button>
+                        <a href="{{ url_for('ana_sayfa') }}" class="btn btn-secondary">
+                            <i class="fas fa-arrow-left me-2"></i>Geri Dön
+                        </a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %} 

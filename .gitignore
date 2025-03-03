@@ -1,0 +1,19 @@
+# Virtual Environment
+venv/
+env/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# SQLite veritabanı
+*.db
+
+# IDE - VS Code
+.vscode/
+*.code-workspace
+
+# Sistem dosyaları
+.DS_Store
+Thumbs.db 
